@@ -1,0 +1,5 @@
+.env
+.env.*
+.mcpregistry*
+*credentials*
+mcp-publisher*

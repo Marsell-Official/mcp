@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Marsell-Official/marsell",
+  "title": "Marsell",
+  "description": "Manage content, marketing and sales in Marsell with your own AI. Read work and act with permission.",
+  "version": "1.0.0",
+  "websiteUrl": "https://docs.getmarsell.com/developers/mcp",
+  "repository": {
+    "url": "https://github.com/Marsell-Official/mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://getmarsell.com/icons/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getmarsell.com/mcp"
+    }
+  ]
+}
