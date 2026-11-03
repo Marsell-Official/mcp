@@ -26,7 +26,7 @@ Then run `/mcp`, select **marsell**, and choose **Authenticate**.
 
 ### Connect with an agent key
 
-In Marsell, open a project, go to **Agents → Your own AI**, and choose **Make a key**. Choose **Reads only**, or **Can act** if your agent should also change things and spend tokens. Copy the key when it is shown; it is only displayed once.
+In Marsell, open a project, go to **Agents → Your own AI**, and choose **Make a key**. Choose **Reads only**, or **Can act** if your agent should also change things and spend tokens. For missions only, choose **Make a missions key**: it can only take and report missions. Copy the key when it is shown; it is only displayed once.
 
 For Codex, set the environment variable in the shell that starts Codex:
 
@@ -60,6 +60,7 @@ Replace the placeholder with your own key through your client's secure credentia
 - Create pictures with a token quote first, and work with Marsell's chat on content, canvases and videos.
 - Set up a business using the context and files your AI already has.
 - Pick up homework that needs your own AI's logins or files, and report its results to Marsell.
+- Send Marsell's messages on Reddit, X and LinkedIn from your own signed-in browser, one mission at a time at Marsell's pace, where you said yes to it in setup or Settings.
 
 The tools available depend on your permissions. Your client can discover the current list through MCP `tools/list`; the [full documentation](https://docs.getmarsell.com/developers/mcp) describes the tools and their approval requirements.
 
