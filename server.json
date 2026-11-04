@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.Marsell-Official/marsell",
+  "name": "com.getmarsell/marsell",
   "title": "Marsell",
   "description": "Manage content, marketing and sales in Marsell with your own AI. Read work and act with permission.",
   "version": "1.0.0",
