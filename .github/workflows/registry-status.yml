@@ -1,0 +1,30 @@
+# Changes the status of this server's MCP Registry listing (io.github.Marsell-Official/marsell), signed in as the
+# organisation through GitHub's OIDC token. Run by hand from the Actions tab.
+name: MCP Registry listing status
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        description: "active, deprecated or deleted"
+        required: true
+        default: deprecated
+      message:
+        description: "Why, shown on the listing"
+        required: false
+        default: ""
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install mcp-publisher
+        run: curl -sL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.7/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - name: Sign in as the organisation
+        run: ./mcp-publisher login github-oidc
+      - name: Set the listing's status
+        env:
+          STATUS: ${{ inputs.status }}
+          MESSAGE: ${{ inputs.message }}
+        run: ./mcp-publisher status --status "$STATUS" --message "$MESSAGE" io.github.Marsell-Official/marsell 1.0.0
