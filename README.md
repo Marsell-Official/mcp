@@ -6,7 +6,7 @@ This is Marsell's official public repository for connection instructions and MCP
 
 **Server URL:** `https://getmarsell.com/mcp`  
 **Transport:** Streamable HTTP  
-**Registry name:** `io.github.Marsell-Official/marsell`
+**Registry name:** `com.getmarsell/marsell`, verified to getmarsell.com (it replaced `io.github.Marsell-Official/marsell` on 4 November 2026)
 
 [Full documentation](https://docs.getmarsell.com/developers/mcp) · [Try the interactive demo](https://getmarsell.com/app/demo) · [Marsell](https://getmarsell.com)
 
