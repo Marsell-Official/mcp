@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "marsell": {
+      "type": "http",
+      "url": "https://getmarsell.com/mcp"
+    }
+  }
+}

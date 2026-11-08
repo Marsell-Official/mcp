@@ -1,6 +1,6 @@
 # Marsell MCP
 
-[Marsell](https://getmarsell.com) handles content, marketing and sales on autopilot for solo founders and small to medium businesses, with teams and organisations supported. Its hosted Model Context Protocol (MCP) server lets the AI you already use work with your Marsell projects.
+[Marsell](https://getmarsell.com) is an AI for marketing, sales and content creation. Its hosted Model Context Protocol (MCP) server lets the AI you already use work with your Marsell projects.
 
 This is Marsell's official public repository for connection instructions and MCP Registry metadata. The hosted backend is private and is not distributed in this repository.
 
@@ -8,7 +8,7 @@ This is Marsell's official public repository for connection instructions and MCP
 **Transport:** Streamable HTTP  
 **Registry name:** `com.getmarsell/marsell`, verified to getmarsell.com (it replaced `io.github.Marsell-Official/marsell` on 4 November 2026)
 
-[Full documentation](https://docs.getmarsell.com/developers/mcp) · [Try the interactive demo](https://getmarsell.com/app/demo) · [Marsell](https://getmarsell.com)
+[Full documentation](https://docs.getmarsell.com/developers/mcp) · [Try the interactive demo](https://getmarsell.com/app/demo) · [Marsell](https://getmarsell.com) · [Privacy](https://getmarsell.com/privacy) · [Terms](https://getmarsell.com/terms)
 
 ## Connect
 
@@ -52,6 +52,21 @@ Authorization: Bearer YOUR_MARSELL_AGENT_KEY
 ```
 
 Replace the placeholder with your own key through your client's secure credential settings. Never commit keys to Git or paste them into an issue.
+
+## Plugins and skills
+
+This repository is also a plugin package. It connects the same hosted server and adds a skill, [`skills/marsell/SKILL.md`](./skills/marsell/SKILL.md), that tells your agent how to work with Marsell.
+
+- **Any agent that reads skills:** `npx skills add Marsell-Official/mcp`
+- **VS Code:** [Install in VS Code](https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522marsell%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%2F%2Fgetmarsell.com%2Fmcp%2522%257D)
+- **Gemini CLI:** `gemini extensions install https://github.com/Marsell-Official/mcp`
+- **Claude Code, Cursor and other plugin hosts:** the manifests are in [`.claude-plugin/`](./.claude-plugin/plugin.json), [`.cursor-plugin/`](./.cursor-plugin/plugin.json) and [`.mcp.json`](./.mcp.json).
+
+### Hermes Agent
+
+The root [`plugin.json`](./plugin.json) and [`mcp.json`](./mcp.json) are an Agent Plugins v1 package for Hermes Agent: configuration only.
+
+Disclosure: every tool call goes to Marsell's hosted server at getmarsell.com. Tools that write can change your Marsell projects, and tools that make pictures, films or other media spend Marsell tokens from your plan; each says so before it runs. Every ad spend still needs the owner's own approval in Marsell. Sign-in runs the pinned `mcp-remote@0.1.49` through npx (Node.js 20.18.1+ and npm required), which stores OAuth tokens under `~/.mcp-auth`. The package has no telemetry and no self-updater. It marks the server untrusted, so Hermes asks before every tool the server doesn't mark read-only and refuses them in unattended runs.
 
 ## What your AI can do
 

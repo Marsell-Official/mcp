@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "marsell",
+  "version": "1.0.0",
+  "description": "Marsell, an AI for marketing, sales and content creation. Run your Marsell projects from your own AI through Marsell's hosted MCP server.",
+  "author": {
+    "name": "Marsell",
+    "url": "https://getmarsell.com"
+  },
+  "homepage": "https://docs.getmarsell.com/developers/mcp",
+  "repository": "https://github.com/Marsell-Official/mcp",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "sales",
+    "content",
+    "social media",
+    "outreach"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "marsell": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}

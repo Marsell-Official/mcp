@@ -1,0 +1,13 @@
+{
+  "name": "marsell",
+  "version": "1.0.0",
+  "description": "Marsell, an AI for marketing, sales and content creation. Run your Marsell projects from your own AI through Marsell's hosted MCP server.",
+  "mcpServers": {
+    "marsell": {
+      "httpUrl": "https://getmarsell.com/mcp",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}
