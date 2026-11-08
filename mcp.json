@@ -6,7 +6,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "mcp-remote@0.1.49",
+        "mcp-remote@0.15.2",
         "https://getmarsell.com/mcp",
         "--transport",
         "http-only",
