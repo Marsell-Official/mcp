@@ -1,5 +1,7 @@
 # Marsell MCP
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/marsell-official-mcp-fbd6w1?v=1185f61d4ced8aeb3d79327f52e3d1ad)](https://m8ven.ai/mcp/marsell-official-mcp-fbd6w1?s=readme)
+
 [Marsell](https://getmarsell.com) is an AI for marketing, sales and content creation. Its hosted Model Context Protocol (MCP) server lets the AI you already use work with your Marsell projects.
 
 This is Marsell's official public repository for connection instructions and MCP Registry metadata. The hosted backend is private and is not distributed in this repository.
