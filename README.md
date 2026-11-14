@@ -76,8 +76,8 @@ Disclosure: every tool call goes to Marsell's hosted server at getmarsell.com, a
 - With permission, answer decisions, update brand information, plan work and use Marsell's content, marketing and sales tools.
 - Create pictures with a token quote first, and work with Marsell's chat on content, canvases and videos.
 - Set up a business using the context and files your AI already has.
-- Pick up homework that needs your own AI's logins or files, and report its results to Marsell.
-- Send Marsell's messages on Reddit, X and LinkedIn from your own signed-in browser, one mission at a time at Marsell's pace, where you said yes to it in setup or Settings.
+- Pick up homework, one list of everything that needs your own logins, files or inbox, each job saying where it is done, and report its results to Marsell.
+- Send Marsell's messages on Reddit, X and LinkedIn from a separate browser profile signed in only to those three, one mission at a time at Marsell's pace, where you said yes to it in setup or Settings.
 
 The tools available depend on your permissions. Your client can discover the current list through MCP `tools/list`; the [full documentation](https://docs.getmarsell.com/developers/mcp) describes the tools and their approval requirements.
 
