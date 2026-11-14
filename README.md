@@ -28,7 +28,7 @@ Then run `/mcp`, select **marsell**, and choose **Authenticate**.
 
 ### Connect with an agent key
 
-In Marsell, open a project, go to **Agents → Your own AI**, and choose **Make a key**. Choose **Reads only**, or **Can act** if your agent should also change things and spend tokens. For missions only, choose **Make a missions key**: it can only take and report missions. Copy the key when it is shown; it is only displayed once.
+In Marsell, open a project, go to **Agents → Your own AI**, and choose **Make a key**. Choose **Reads only**, or **Can act** if your agent should also change things and spend tokens. For missions only, choose **Make a missions key**: it can only take, report and give back missions, and record its timer. Copy the key when it is shown; it is only displayed once.
 
 For Codex, set the environment variable in the shell that starts Codex:
 
